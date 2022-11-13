@@ -27,7 +27,9 @@
     "trendmicro-ui": "^0.5.2",
     "web-vitals": "^2.1.0"
   },
+ 
   "scripts": {
+    "devStart": "react-scripts start",
     "start": "vercel dev",
     "build": "react-scripts build",
     "test": "react-scripts test",

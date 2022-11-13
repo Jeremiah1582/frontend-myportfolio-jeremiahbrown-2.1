@@ -11,6 +11,7 @@ function MyProvider({ children }) {
   const [cvIdDev, setCvIdDev] = useState("");
   const [isAdmin, setIsAdmin] = useState(false);
   const hostLink = `http://localhost:3000/`;
+  // const basename = `https://frontend-portfolio-k45l4tus7-jeremiah1582.vercel.app/`;
   const backendHostLink = "http://localhost:5001/";
   const [isLoggedin, setIsLoggedin] = useState(false);
   const [carouselTextBox1, setcarouselTextBox1] = useState("");

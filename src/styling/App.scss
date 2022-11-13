@@ -103,7 +103,7 @@ $mobileLayoutWidth: 400px;
 
   .headerContainer {
     width: 100%;
-    contain: content;
+    contain: 50vh;
 
     .imgOfMe {
       position: absolute;

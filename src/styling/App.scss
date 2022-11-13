@@ -103,13 +103,14 @@ $mobileLayoutWidth: 400px;
 
   .headerContainer {
     width: 100%;
-    contain: 50vh;
+    
+    contain: content;
 
     .imgOfMe {
       position: absolute;
       width: 100%;
       text-align: center;
-      top: 60.5%;
+      top: 40.5%;
       color: white;
       animation: drop_down 3.5s;
       height: 350px;
@@ -131,7 +132,7 @@ $mobileLayoutWidth: 400px;
           top: -10%;
         }
         to {
-          top: 60.5%;
+          top: 40.5%;
         }
       }
     }
@@ -170,7 +171,7 @@ $mobileLayoutWidth: 400px;
       background-size: cover;
       background-position: bottom;
       width: 100%;
-      min-height: 100vh;
+      min-height: 70vh;
       border-bottom-left-radius: 300px;
       border-bottom-right-radius: 300px;
     }

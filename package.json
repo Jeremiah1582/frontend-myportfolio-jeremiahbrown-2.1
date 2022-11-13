@@ -25,11 +25,10 @@
     "react-spring-3d-carousel": "^1.2.1",
     "sass": "^1.54.6",
     "trendmicro-ui": "^0.5.2",
-    "vercel": "^28.4.15",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "vercel dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -55,5 +54,8 @@
   "description": "frontend -test-vercel deployment ",
   "main": "index.js",
   "author": "jeremiah.1582@googlemail.com <jeremiah.1582@googlemail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^28.4.17"
+  }
 }

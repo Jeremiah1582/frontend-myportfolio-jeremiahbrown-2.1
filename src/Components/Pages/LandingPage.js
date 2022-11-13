@@ -36,10 +36,10 @@ function LandingPage() {
           <div className="footerCol">
             <h4>Contact details</h4>
             <br />
-            <h5>mobile:</h5> <p> {user.mobile}</p>
+            <h5>mobile:</h5> <p> +49 178 2822679</p>
             <h5>email: </h5>
-            <p>{user.email}</p>
-            <h5>city: </h5> <p>{user.location}</p>
+            <p>jeremiah.1582@googlemail.com</p>
+            <h5>city: </h5> <p>Berlin, Germany (remote)</p>
           </div>
           <div className="footerCol">
             <h4>Socials:</h4>

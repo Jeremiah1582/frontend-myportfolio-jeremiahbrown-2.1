@@ -33,7 +33,7 @@ function AddWorkExperience() {
     console.log("handleAddExpSubmit was fired ");
     // axios
     //   .post(
-    //     `http://localhost:5001/${user.accountType}/addWorkExp`,
+    //     `${backendHostLink}/${user.accountType}/addWorkExp`,
     //     { workExp, userId },
     //     {
     //       headers: {

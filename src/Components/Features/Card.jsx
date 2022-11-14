@@ -7,6 +7,7 @@ import { MyContext } from "../../Context/ContextApi";
 function Card({ imagen, ...props }) {
   const [show, setShown] = useState(false);
 
+  
   const props3 = useSpring({
     transform: show ? "scale(1.03)" : "scale(1)",
     boxShadow: show

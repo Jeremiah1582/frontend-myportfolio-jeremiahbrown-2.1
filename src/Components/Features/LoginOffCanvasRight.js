@@ -23,7 +23,7 @@ export function OffCanvasRight({ name, ...props }) {
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${backendHostLink}/user/adminLogin`, { loginDetails })
+      .post(`${backendHostLink}user/adminLogin`, { loginDetails })
       .then((doc) => {
         console.log("doc is ....", doc);
 

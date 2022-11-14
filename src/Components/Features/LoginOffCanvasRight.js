@@ -5,7 +5,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { MyContext } from "../../Context/ContextApi";
 
 export function OffCanvasRight({ name, ...props }) {
-  const { setIsLoggedin } = useContext(MyContext);
+  const { setIsLoggedin, backendHostLink  } = useContext(MyContext);
   const [show, setShow] = useState(false);
   const [loginDetails, setLoginDetails] = useState({});
   const [msg, setMsg] = useState("");
@@ -23,7 +23,7 @@ export function OffCanvasRight({ name, ...props }) {
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`http://localhost:5001/user/adminLogin`, { loginDetails })
+      .post(`${backendHostLink}/user/adminLogin`, { loginDetails })
       .then((doc) => {
         console.log("doc is ....", doc);
 

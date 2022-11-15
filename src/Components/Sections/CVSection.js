@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import CVImagen from "../../images/crop-of-webdevCV.JPG";
+import CVImagen from "../../images/new-cv-nov-2022.png";
 import { Button } from "react-bootstrap";
 import Card from "../Features/Card.jsx";
 import Carousel from "../Features/3Dcarousel";

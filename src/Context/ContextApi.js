@@ -61,12 +61,11 @@ function MyProvider({ children }) {
       setIsLoggedin(false);
     }
   };
-useEffect(() => {
-  setTimeout(() => {
-    setMsg("")
-  }, 1000*6);
-
-}, [setMsg])
+  useEffect(() => {
+    setTimeout(() => {
+      setMsg("");
+    }, 1000 * 6);
+  }, [setMsg]);
 
   useEffect((e) => {
     getUser();

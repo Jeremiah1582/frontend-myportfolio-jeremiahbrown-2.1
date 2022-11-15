@@ -1,5 +1,5 @@
 @import "mobileLayout";
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@100;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@100;400&display=swap");
 $color0: rgba(249, 244, 244, 0.757);
 $color1: #96a0a03c;
 $color2: #243a4ee8;
@@ -21,7 +21,6 @@ $backgroundIndex: 0;
 $midgroundIndex: 5;
 $foregroundIndex: 10;
 $mobileLayoutWidth: 400px;
-
 
 @mixin test {
   border: dotted rgb(255, 0, 43);
@@ -79,16 +78,12 @@ $mobileLayoutWidth: 400px;
   }
 }
 
-
 .App {
   display: flex;
   justify-content: center;
   background-color: $color0;
   min-height: 100vh;
-  font-family: 'Raleway', sans-serif;
-
-  
-
+  font-family: "Raleway", sans-serif;
 }
 
 // Landing-Page
@@ -96,7 +91,6 @@ $mobileLayoutWidth: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 
   .headerContainer {
     width: 100%;
@@ -270,7 +264,6 @@ $mobileLayoutWidth: 400px;
   align-items: center;
   // padding-left: 10%;
   // padding-right: 10%;
- 
 }
 .section {
   display: flex;

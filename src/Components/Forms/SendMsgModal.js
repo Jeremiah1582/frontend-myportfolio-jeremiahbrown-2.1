@@ -26,9 +26,7 @@ function SendMsgModal({
     console.log(msgDetails);
   };
 
-  const delay = ms => new Promise(
-    resolve => setTimeout(resolve, ms)
-  );
+  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
   const handleFormSubmit = (e) => {
     setIsPending(true);
@@ -39,7 +37,7 @@ function SendMsgModal({
         console.log(result);
 
         if (result.data) {
-          setMsg(result.data.msg)
+          setMsg(result.data.msg);
           refreshList();
           setMsgDetails({
             title: "",
@@ -48,9 +46,9 @@ function SendMsgModal({
             email: "",
             company: "",
             message: "",
-          })
-            handleMsgModalClose(result.data.msg);
-            setIsPending(false);
+          });
+          handleMsgModalClose(result.data.msg);
+          setIsPending(false);
         }
       });
   };
@@ -66,7 +64,6 @@ function SendMsgModal({
           <Modal.Title>Send Jeremiah a Message </Modal.Title>
         </Modal.Header>
         <Form onSubmit={handleFormSubmit}>
-         
           <Modal.Body id="msgModalBody">
             {/* Author */}
             <Form.Group

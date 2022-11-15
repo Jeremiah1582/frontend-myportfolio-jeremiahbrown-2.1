@@ -8,18 +8,17 @@ import CVSection from "../Sections/CVSection";
 import { MyContext } from "../../Context/ContextApi.js";
 import WorkExpPage from "../Pages/workExpPage";
 import { defaultUserState } from "../../Context/dataSets/emptyUserDataSet";
-import {Alert} from "react-bootstrap"
+import { Alert } from "react-bootstrap";
 
 function LandingPage() {
   const { user, getUser, msg } = useContext(MyContext);
-
   return (
     <div id="home" className="landingPageCon">
       {/* HEADER SEC */}
       <header className="">
         <Header />
       </header>
-      
+
       <div className="sectionContainer">
         {/* SERVICES SEC */}
         <ServicesSection />

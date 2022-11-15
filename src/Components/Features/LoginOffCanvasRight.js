@@ -5,7 +5,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { MyContext } from "../../Context/ContextApi";
 
 export function OffCanvasRight({ name, ...props }) {
-  const { setIsLoggedin, backendHostLink  } = useContext(MyContext);
+  const { setIsLoggedin, backendHostLink } = useContext(MyContext);
   const [show, setShow] = useState(false);
   const [loginDetails, setLoginDetails] = useState({});
   const [msg, setMsg] = useState("");
@@ -33,9 +33,9 @@ export function OffCanvasRight({ name, ...props }) {
           setIsLoggedin(true);
           setMsg(doc.data.msg);
           handleClose();
-        } else if (doc ==null){
+        } else if (doc == null) {
           setMsg(doc.data.msg);
-        }else {
+        } else {
           console.log(doc);
           setMsg(doc.data.msg);
         }
@@ -50,15 +50,11 @@ export function OffCanvasRight({ name, ...props }) {
         onHide={handleClose}
         {...props}
       >
-      
         <Offcanvas.Header closeButton>
-          
           <Offcanvas.Title>Welcome Back</Offcanvas.Title>
         </Offcanvas.Header>
-        {msg !==""? (
-          <Alert variant="warning">{msg}</Alert>
-        ):null}
-        
+        {msg !== "" ? <Alert variant="warning">{msg}</Alert> : null}
+
         <Offcanvas.Body className="offCanvasBody">
           <Form onSubmit={handleLoginSubmit}>
             <Form.Group
@@ -90,9 +86,7 @@ export function OffCanvasRight({ name, ...props }) {
             </Form.Group>
             <Button type="submit"> Login</Button>
           </Form>
-         
         </Offcanvas.Body>
-       
       </Offcanvas>
     </>
   );

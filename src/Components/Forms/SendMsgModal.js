@@ -37,6 +37,14 @@ function SendMsgModal({
         setIsPending(false);
         refreshList();
         handleMsgModalClose();
+        setMsgDetails({
+          title: "",
+          subject: "",
+          author: "",
+          email: "",
+          company: "",
+          message: "",
+        })
       });
   };
   return (

@@ -27,7 +27,7 @@ function UploadProfilePic() {
 
     await axios
       .post(
-        backendHostLink + "admin/uploadProfilePic",
+        `${backendHostLink}admin/uploadProfilePic`,
         formData,
         myMultipartHeader
       )

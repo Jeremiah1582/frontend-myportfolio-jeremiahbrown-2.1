@@ -9,8 +9,7 @@ function SendMsgModal({
   handleMsgModalClose,
   msgModalShow,
 }) {
-  const { backendHostLink, refreshList } = useContext(MyContext);
-  const [msg, setmMsg] = useState("");
+  const { backendHostLink, refreshList, msg, setMsg } = useContext(MyContext);
   const [isPending, setIsPending] = useState(false);
   const [checked, setChecked] = useState(false);
   const [msgDetails, setMsgDetails] = useState({
@@ -27,6 +26,10 @@ function SendMsgModal({
     console.log(msgDetails);
   };
 
+  const delay = ms => new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+
   const handleFormSubmit = (e) => {
     setIsPending(true);
     e.preventDefault();
@@ -34,17 +37,21 @@ function SendMsgModal({
       .post(`${backendHostLink}user/sendWhatsappMsg`, { msgDetails })
       .then((result) => {
         console.log(result);
-        setIsPending(false);
-        refreshList();
-        handleMsgModalClose();
-        setMsgDetails({
-          title: "",
-          subject: "",
-          author: "",
-          email: "",
-          company: "",
-          message: "",
-        })
+
+        if (result.data) {
+          setMsg(result.data.msg)
+          refreshList();
+          setMsgDetails({
+            title: "",
+            subject: "",
+            author: "",
+            email: "",
+            company: "",
+            message: "",
+          })
+            handleMsgModalClose(result.data.msg);
+            setIsPending(false);
+        }
       });
   };
   return (
@@ -59,7 +66,7 @@ function SendMsgModal({
           <Modal.Title>Send Jeremiah a Message </Modal.Title>
         </Modal.Header>
         <Form onSubmit={handleFormSubmit}>
-          {msg !== "" ? <Alert variant="warning">{msg}</Alert> : ""}
+         
           <Modal.Body id="msgModalBody">
             {/* Author */}
             <Form.Group

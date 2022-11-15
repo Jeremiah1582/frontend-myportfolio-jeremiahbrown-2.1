@@ -1,6 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./styling/App.scss";
+import {Alert, Modal} from "react-bootstrap"
 import LandingPage from "./Components/Pages/LandingPage";
 import AboutSection from "./Components/Sections/AboutSection";
 import CodeStackSection from "./Components/Sections/CodeStackSection";
@@ -17,18 +18,34 @@ import WorkExpPage from "./Components/Pages/workExpPage";
 
 function App() {
   const { getUser, hostLink } = useContext(MyContext);
+  const [alertMsg, setAlertMsg] = useState("")
+  const [alertShow, setAlertShow] = useState(false);
   useEffect(() => {
     getUser();
   }, []);
 
   const [msgModalShow, setMsgModalShow] = useState(false);
 
+  const handleAlertShow = () => setAlertShow(true);
   const handleMsgModalShow = () => setMsgModalShow(true);
-  const handleMsgModalClose = () => setMsgModalShow(false);
+
+  const handleMsgModalClose = (msg) => {
+    setAlertMsg(msg)
+    setMsgModalShow(false)
+    handleAlertShow()
+      setTimeout(() => {
+        // AlertClose()
+        setAlertMsg("")
+        setAlertShow(false)
+      }, 1000*3);
+  };
+ 
 
   return (
     <div className="App">
+     
       <SideNavBar />
+
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/aboutSection" element={<AboutSection />} />
@@ -40,12 +57,21 @@ function App() {
         {/* <Route exact="/cv" element={<CVSection />} /> */}
         {/* if isAdmin true */}
       </Routes>
+      
       <SendMsgModal
         msgModalShow={msgModalShow}
         handleMsgModalShow={handleMsgModalShow}
         handleMsgModalClose={handleMsgModalClose}
       />
+    
+      <Modal variant="success" show={alertShow}><Modal.Header closeButton>
+          <Modal.Title>{alertMsg}</Modal.Title>
+        </Modal.Header>
+        </Modal>)
+      
       <MsgButton handleMsgModalShow={handleMsgModalShow} />
+
+
     </div>
   );
 }

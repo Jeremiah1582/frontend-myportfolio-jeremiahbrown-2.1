@@ -7,7 +7,7 @@ export const MyContext = createContext();
 function MyProvider({ children }) {
   const [user, setUser] = useState({});
   const [returnResult, setReturnResult] = useState();
-  const [msg, setMsg] = useState({});
+  const [msg, setMsg] = useState("");
   const [cvIdDev, setCvIdDev] = useState("");
   const [isAdmin, setIsAdmin] = useState(false);
   const hostLink = `https://frontend-portfolio-k45l4tus7-jeremiah1582.vercel.app/`;
@@ -61,7 +61,12 @@ function MyProvider({ children }) {
       setIsLoggedin(false);
     }
   };
-  
+useEffect(() => {
+  setTimeout(() => {
+    setMsg("")
+  }, 1000*6);
+
+}, [setMsg])
 
   useEffect((e) => {
     getUser();

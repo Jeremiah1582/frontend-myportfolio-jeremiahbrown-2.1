@@ -5,7 +5,7 @@ import axios from "axios";
 import { MyContext } from "../../Context/ContextApi.js";
 
 function EditUserForm() {
-  const { user, getUser, isLoggedin, myHeader } = useContext(MyContext);
+  const { user, getUser, isLoggedin, myHeader, backendHostLink  } = useContext(MyContext);
   const [updatedUser, setUpdatedUser] = useState(user);
   const [msg, setMsg] = useState({});
   const [socialsList, setSocialsList] = useState([]);
@@ -27,7 +27,7 @@ function EditUserForm() {
     if (isLoggedin) {
       axios
         .post(
-          `http://localhost:5001/${user.accountType}/editUserInfo`,
+          `${backendHostLink}${user.accountType}/editUserInfo`,
           { update: updatedUser },
           myHeader
         )

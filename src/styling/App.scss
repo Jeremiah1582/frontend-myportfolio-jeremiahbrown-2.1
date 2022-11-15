@@ -82,28 +82,24 @@ $mobileLayoutWidth: 400px;
 
 .App {
   display: flex;
-  // align-items: center;
+  justify-content: center;
   background-color: $color0;
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
+
   
 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 // Landing-Page
 .landingPageCon {
-  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  
 
   .headerContainer {
     width: 100%;
-    
     contain: content;
 
     .imgOfMe {
@@ -220,12 +216,13 @@ $mobileLayoutWidth: 400px;
 // HEADER
 .headerSec {
   margin-bottom: 2rem;
-  margin-left: 10%;
+  // margin-left: 10%;
   padding: 0;
 }
 
 .landingPageHeader {
-  width: 100vw;
+  width: 100%;
+
   .headerContainer {
     display: flex;
     justify-content: flex-end;
@@ -263,10 +260,17 @@ $mobileLayoutWidth: 400px;
 // SECTION
 .sectionContainer {
   // max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 80%;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
+  justify-content: center;
+  align-items: center;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  @include test
 }
 .section {
   display: flex;
@@ -276,8 +280,8 @@ $mobileLayoutWidth: 400px;
   min-height: 350px;
   height: fit-content;
   margin-top: 5rem;
-  margin-left: 5rem;
-  margin-right: 2rem;
+  // margin-left: 5rem;
+  // margin-right: 2rem;
   margin-bottom: 5rem;
   border-radius: 25px;
   // background-color: #d8d6d6;
@@ -463,7 +467,7 @@ $mobileLayoutWidth: 400px;
 .contentSection {
   margin-top: 5%;
   margin-bottom: 10%;
-  width: inherit;
+  width: fit-content;
   display: flex;
   justify-content: space-between;
   .carouselSec {
@@ -529,6 +533,7 @@ $mobileLayoutWidth: 400px;
 }
 
 .innerTextBox {
+  margin-top: 10%;
   h4 {
     margin-bottom: 35px;
   }

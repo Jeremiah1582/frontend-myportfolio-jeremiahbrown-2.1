@@ -9,7 +9,7 @@ function ServicesSection() {
         <Carousel
           cards={servicesListCards}
           height="100%"
-          width="100rem"
+          width="40rem"
           margin="0 auto"
           offset={2}
           showArrows={false}

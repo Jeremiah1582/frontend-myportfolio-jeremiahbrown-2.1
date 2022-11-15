@@ -8,7 +8,7 @@ import { MyContext } from "../../Context/ContextApi";
 
 function CVSection() {
   const { backendHostLink, user } = useContext(MyContext);
-  const fileIdInBucket = "63452096bf908762126f8d93";
+  const fileIdInBucket = "6373c427c9999520d9106b41";
 
   const [CVInfo, setCVInfo] = useState([
     {

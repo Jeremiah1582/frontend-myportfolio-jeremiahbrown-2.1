@@ -49,6 +49,7 @@ function SendMsgModal({
           });
           handleMsgModalClose(result.data.msg);
           setIsPending(false);
+          setChecked(false)
         }
       });
   };

@@ -31,7 +31,11 @@ function App() {
   const handleMsgModalClose = (msg) => {
     setAlertMsg(msg);
     setMsgModalShow(false);
-    handleAlertShow();
+
+    if (msg) {
+      handleAlertShow();
+    }
+
     setTimeout(() => {
       // AlertClose()
       setAlertMsg("");

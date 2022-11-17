@@ -1,3 +1,11 @@
+MY PROFILE ONLINE
+
+This is the repo for my personnal Dev profile. in this repo you can see the fron end code that i used to build the app. The frame work i used is React.js. 
+For deployment purposes on Vercel, i decided to host the front-end and back-end in two different git-repositories. 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

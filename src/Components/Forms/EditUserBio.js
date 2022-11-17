@@ -5,7 +5,7 @@ import { MyContext } from "../../Context/ContextApi";
 
 function EditUserBio() {
   const [msg, setMsg] = useState({});
-  const { user, getUser, hostLink, myHeader } = useContext(MyContext);
+  const { user, getUser, backendHostLink, myHeader } = useContext(MyContext);
   const [updatedUser, setUpdatedUser] = useState(user);
 
   const handleChange = (e) => {
@@ -21,7 +21,7 @@ function EditUserBio() {
     if (user.accountType === "admin") {
       axios
         .post(
-          `${hostLink}admin/editUserInfo`,
+          `${backendHostLink}admin/editUserInfo`,
           { update: updatedUser },
           myHeader
           // {

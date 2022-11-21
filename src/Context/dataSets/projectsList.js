@@ -5,8 +5,8 @@ import drumkitPic from "../../images/Screenshot-drumkit-2022-10-28 144448.png";
 import feel_your_flow from "../../images/feel_your_flow.png";
 import {codingLanguages} from "./codeStackDataset"
 
-const stackUsedInProject=(x)=>{
-    const result=codingLanguages.filter(language=>{return language.name===x? (language):null})
+const stackUsedInProject=(item)=>{
+    const result=codingLanguages.filter(language=>{return language.name===item? (language):null})
     console.log(result);
 return result
 } 
@@ -73,13 +73,14 @@ export const projectsList = [
   {
     key: "5",
     name: "feelyourflow.de",
-    link: "https://feelyourflow.de/",
+    link:null,
+    liveLink: "https://feelyourflow.de/",
     icon: "",
     description:
       " This is a client example that is live and operational. Here we learned to used Shopify Liquids template-engine to construct this site",
     teachStack:["JS", "Shopify Liquid", "CSS", "HTML"],
     img: feel_your_flow,
-    callToAction: "View site",
+    callToAction2: "go to site",
   },
 ];
 
@@ -92,6 +93,7 @@ export const projectListCards = projectsList.map((project, idx) => {
         key={project.name + idx}
         icon={project.icon}
         link={project.link}
+        techStack={project.techStack}
         liveLink={project.liveLink}
         description={project.description}
         callToAction={project.callToAction}

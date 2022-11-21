@@ -2,14 +2,24 @@ import Card from "../../Components/Features/Card.jsx";
 import ZoeAppPic from "../../images/ZoeApp2021.JPG";
 import xoomPic from "../../images/preview-xoom-videochat-app.JPG";
 import drumkitPic from "../../images/Screenshot-drumkit-2022-10-28 144448.png";
+import feel_your_flow from "../../images/feel_your_flow.png";
+import {codingLanguages} from "./codeStackDataset"
+
+const stackUsedInProject=(x)=>{
+    const result=codingLanguages.filter(language=>{return language.name===x? (language):null})
+    console.log(result);
+return result
+} 
 
 export const projectsList = [
   //exported to NavArray
+  
   {
     key: "0",
     name: "Zoe Booking Medical Platform",
     link: "https://github.com/Jeremiah1582/zoiapp2021",
     icon: "",
+    teachStack:["JS","CSS", "HTML", "React", "MongoDB", "Node.js", "ExpressJS", "Mongoose", ],
     description:
       " Zoe is booking platform for patience. Where they are able to view what Dr's are available and when they are available in realtime. Dr's are able to modify their availability as it suits them. and both parties are notified when a booking is confirmed",
     img: ZoeAppPic,
@@ -21,6 +31,7 @@ export const projectsList = [
     link: "https://github.com/Jeremiah1582/API-Job_Listing_ENG-DEU-Live",
     liveLink: "https://api-joblisting-eng-deu-live.herokuapp.com/",
     icon: "",
+    teachStack:["JS", "Node.js", "ExpressJS", "Heroku" ],
     description:
       " This was an API I created and put online so I could easily see new Dev-job-listings from multiple sites  in one place, in including jobs listed on Linkedin and Reed. This API can also be used in future projects. ",
 
@@ -33,20 +44,21 @@ export const projectsList = [
     name: "DrumKit-Toy-Project",
     link: "https://github.com/Jeremiah1582/DRum-Kit-Toy-Project",
     icon: "",
+    teachStack:["JS","CSS", "HTML", "React" ],
     description:
-      "'This was a Toy Project where i was just playing around with adding sound to project ",
+      " Front end Toy Project where i was learning how to sound to project",
     img: drumkitPic,
     callToAction: "View Code",
   },
-  {
-    key: "3",
-    name: "test3",
-    link: "http/",
-    icon: "",
-    description: " this is a text project description ",
-    img: "https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png",
-    callToAction: "View Code",
-  },
+  // {
+  //   key: "3",
+  //   name: "test3",
+  //   link: "http/",
+  //   icon: "",
+  //   description: " this is a text project description ",
+  //   img: "https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png",
+  //   callToAction: "View Code",
+  // },
   {
     key: "4",
     name: "Xoom-VideoChat-app",
@@ -54,8 +66,20 @@ export const projectsList = [
     icon: "",
     description:
       " This app allows 2 people to talk over video chat. inspired by the pandemic in 2021 because we all communicated via Zoom",
+      teachStack:["JS", "Socket.io", "CSS", "HTML", "React", "Node", "ExpressJS"],
     img: xoomPic,
     callToAction: "View Code",
+  },
+  {
+    key: "5",
+    name: "feelyourflow.de",
+    link: "https://feelyourflow.de/",
+    icon: "",
+    description:
+      " This is a client example that is live and operational. Here we learned to used Shopify Liquids template-engine to construct this site",
+    teachStack:["JS", "Shopify Liquid", "CSS", "HTML"],
+    img: feel_your_flow,
+    callToAction: "View site",
   },
 ];
 

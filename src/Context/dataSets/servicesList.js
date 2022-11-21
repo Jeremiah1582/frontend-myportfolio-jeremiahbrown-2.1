@@ -3,15 +3,9 @@ import saleCycle from "../../images/7-stufen-sales-cycle.png";
 import mernStack from "../../images/mern-stack-banner-image.png";
 import frontEndExample from "../../images/FrontendWedDevImgExampleTravelHouse.png";
 import backEndExample from "../../images/backend-illustrationPNG.gif";
-import consulting from "../../images/Leadership.png";
-import agile from "../../images/agile-lifecycle-development-process-diagram-vecto.jpg";
-import salesTraining from "../../images/salesTrainingImg.png";
-import mindfulTech from "../../images/women-web-developer-with-laptop.png";
-import leadership from "../../images/TeamManagement.gif";
-import diversityAndInclusion from "../../images/jeffery-erhunse-BQMZ5ligqps-unsplash (1).jpg";
 export const servicesList = [
   {
-    name: "MERN-Stack Web-Development ",
+    name: "Full-Stack Web-Development",
     link: "https://www.mongodb.com/mern-stack#:~:text=MERN%20is%20the%20stack%20of%20choice%20for%20today%E2%80%99s,JSON-heavy%2C%20cloud-native%2C%20and%20that%20have%20dynamic%20web%20interfaces.",
     icon: "",
     experience: "2 years",

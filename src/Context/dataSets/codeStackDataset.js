@@ -1,5 +1,74 @@
 export const codingLanguages = [
   {
+    name: "React",
+    icon: "https://cdn.buttercms.com/cQfNWfcMSHmAZfvtloVz",
+    type: "framework, JavaScript library ",
+    info: "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
+    documentation: "https://reactjs.org/tutorial/tutorial.html#what-is-react",
+  },
+  {
+    name: "JS",
+    icon: "https://cdn-icons-png.flaticon.com/512/919/919828.png",
+    type: "Multi-paradigm programming language",
+    paradigm:
+      "event-driven, functional, imperative, procedural, object-oriented programming",
+    info: "",
+    documentation: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "Python",
+    icon: "http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
+    type: "programming language",
+    paradigm:
+      " Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",
+    info: "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. ",
+    documentation: "https://www.python.org/doc/essays/blurb/",
+  },
+  {
+    name: "MongoDB",
+    icon: "https://www.svgviewer.dev/static-svgs/34566/mongodb.svg",
+    type: "database, NoSQL database program",
+    WrittenIn: "C++, JavaScript, Python",
+    info: "MongoDB Atlas is a fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS , Azure, and GCP). ",
+    documentation:
+      "https://mongodb.github.io/node-mongodb-native/3.1/tutorials/main/",
+    documentation2: "https://www.mongodb.com/docs/manual/core/gridfs/",
+  },
+  {
+    name: "Node.js",
+    icon: "https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png",
+    type: "runtime",
+    info: "An asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. ",
+    documentation: "https://nodejs.dev/learn",
+  },
+  {
+    name: "ExpressJS",
+    icon: "https://www.mementotech.in/assets/images/icons/express.png",
+    type: "framework",
+    for: "Node.js",
+    writtenIn: "JavaScript",
+    info: "A back end web application framework for Node.js, designed for building web applications and APIs.",
+    documentation:
+      "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
+  },
+  {
+    name: "AWS",
+    icon: "https://th.bing.com/th/id/R.a6c1d39637949a370f8e93aab60a741f?rik=ABtTtCBpS8oVOw&riu=http%3a%2f%2fgisuser.com%2fwp-content%2fuploads%2f2018%2f08%2f2000px-Amazon_Web_Services_Logo.svg_.png&ehk=hQq0rohWcsyiJCNiAOwDAXgnti8Yjm0TPZJLBnIXSHM%3d&risl=&pid=ImgRaw&r=0",
+    type: "cloud computing platform",
+    paradigm: " functional, generic, imperative, object-oriented",
+    info: "currently enrolled in an AWS course",
+    documentation: "https://docs.aws.amazon.com/index.html",
+  },
+ 
+  {
+    name: "TS",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
+    type: "Multi-paradigm programming language",
+    paradigm: " functional, generic, imperative, object-oriented",
+    info: "",
+    documentation: "https://www.w3schools.com/typescript/typescript_intro.php",
+  },
+  {
     name: "HTML",
     icon: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png",
     type: "Markup language",
@@ -22,31 +91,6 @@ export const codingLanguages = [
     documentation: "https://www.w3schools.com/sass/sass_intro.php",
   },
   {
-    name: "JS",
-    icon: "https://cdn-icons-png.flaticon.com/512/919/919828.png",
-    type: "Multi-paradigm programming language",
-    paradigm:
-      "event-driven, functional, imperative, procedural, object-oriented programming",
-    info: "",
-    documentation: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  {
-    name: "TS",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png",
-    type: "Multi-paradigm programming language",
-    paradigm: " functional, generic, imperative, object-oriented",
-    info: "",
-    documentation: "https://www.w3schools.com/typescript/typescript_intro.php",
-  },
-  {
-    name: "AWS",
-    icon: "https://th.bing.com/th/id/R.a6c1d39637949a370f8e93aab60a741f?rik=ABtTtCBpS8oVOw&riu=http%3a%2f%2fgisuser.com%2fwp-content%2fuploads%2f2018%2f08%2f2000px-Amazon_Web_Services_Logo.svg_.png&ehk=hQq0rohWcsyiJCNiAOwDAXgnti8Yjm0TPZJLBnIXSHM%3d&risl=&pid=ImgRaw&r=0",
-    type: "cloud computing platform",
-    paradigm: " functional, generic, imperative, object-oriented",
-    info: "currently enrolled in an AWS course",
-    documentation: "https://docs.aws.amazon.com/index.html",
-  },
-  {
     name: "jQuery",
     icon: "https://icon-library.com/images/jquery-icon-png/jquery-icon-png-28.jpg",
     type: "JavaScript library",
@@ -54,22 +98,12 @@ export const codingLanguages = [
     documentation: "https://developer.mozilla.org/en-US/docs/Glossary/jQuery",
   },
   {
-    name: "MongoDB",
-    icon: "https://www.svgviewer.dev/static-svgs/34566/mongodb.svg",
-    type: "database, NoSQL database program",
-    WrittenIn: "C++, JavaScript, Python",
-    info: "MongoDB Atlas is a fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS , Azure, and GCP). ",
-    documentation:
-      "https://mongodb.github.io/node-mongodb-native/3.1/tutorials/main/",
-    documentation2: "https://www.mongodb.com/docs/manual/core/gridfs/",
-  },
-  {
-    name: "GridFs",
-    icon: "",
+    name: "socket.io",
+    icon: "https://seeklogo.com/images/S/socketio-logo-B8A7F486CD-seeklogo.com.png",
     type: "dependency",
-    info: "GridFS is a specification for storing and retrieving files that exceed the BSON-document size limit of 16 MB. ",
-    documentation: "https://www.mongodb.com/docs/manual/core/gridfs/",
-    documentation2: "https://github.com/aheckmann/gridfs-stream",
+    info: "Socket.IO is an event-driven library for real-time web applications. It enables real-time, bi-directional communication between web clients and servers. ",
+    documentation: "https://socket.io/docs/v4/",
+    
   },
   {
     name: "Mongoose",
@@ -122,23 +156,7 @@ export const codingLanguages = [
     info: "Prisma is a next-generation ORM that consists of Prisma Client: Auto-generated and type-safe query builder for Node.js & TypeScript, Prisma Migrate: Declarative data modeling & migration system, Prisma Studio: GUI to view and edit data in your database. ",
     documentation: "https://github.com/prisma/prisma#what-is-prisma",
   },
-  {
-    name: "Node.js",
-    icon: "https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png",
-    type: "runtime",
-    info: "An asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. ",
-    documentation: "https://nodejs.dev/learn",
-  },
-  {
-    name: "ExpressJS",
-    icon: "https://www.mementotech.in/assets/images/icons/express.png",
-    type: "framework",
-    for: "Node.js",
-    writtenIn: "JavaScript",
-    info: "A back end web application framework for Node.js, designed for building web applications and APIs.",
-    documentation:
-      "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
-  },
+
   {
     name: "Shopify Liquid",
     icon: "https://parse.programmieren-muenchen.de/parse/files/unilearn/liquid-logo-text.png",
@@ -149,11 +167,18 @@ export const codingLanguages = [
     documentation: "https://shopify.github.io/liquid/",
   },
   {
-    name: "React",
-    icon: "https://cdn.buttercms.com/cQfNWfcMSHmAZfvtloVz",
-    type: "framework, JavaScript library ",
-    info: "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
-    documentation: "https://reactjs.org/tutorial/tutorial.html#what-is-react",
+    name: "Vercel",
+    icon: "https://assets.vercel.com/image/upload/front/favicon/round-2/180x180.png",
+    type: "app hosting service",    
+    info: "Vercel is an end-to-end platform for developers, that allows you to create and deploy your web application. ",
+    documentation: "https://vercel.com/docs",
+  },
+  {
+    name: "Heroku",
+    icon: "https://th.bing.com/th/id/OIP.HvBfzGwI9pfFfpx6eD-j7wHaIy?pid=ImgDet&rs=1",
+    type: "app hosting service",    
+    info: "Heroku makes it easy to deploy and scale Node.js applications.  ",
+    documentation: "https://devcenter.heroku.com/categories/reference",
   },
   // {
   //   name: "React Native",
@@ -163,14 +188,5 @@ export const codingLanguages = [
   //   writtenIn: "JavaScript, Java, C++, Objective-C, Python",
   //   info: "React Native is a JavaScript framework for writing real, natively rendering mobile applications for iOS and Android. It's based on React.",
   //   documentation: "https://reactnative.dev/docs/getting-started",
-  // },
-  // {
-  //   name: "Python",
-  //   icon: "http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
-  //   type: "programming language",
-  //   paradigm:
-  //     " Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",
-  //   info: "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. ",
-  //   documentation: "https://www.python.org/doc/essays/blurb/",
   // },
 ];

@@ -34,7 +34,7 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "Sales Consultant",
+    name: "Sales & Marketing Consultant",
     link: "https://www.linkedin.com/in/jeremiah-brown-35232190/details/experience/",
     icon: "",
     experience: "over 7 years",

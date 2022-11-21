@@ -17,7 +17,7 @@ export const codingLanguages = [
   },
   {
     name: "Python",
-    icon: "http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
+    icon: "https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png",
     type: "programming language",
     paradigm:
       " Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",

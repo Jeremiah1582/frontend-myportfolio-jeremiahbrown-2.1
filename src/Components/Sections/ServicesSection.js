@@ -19,12 +19,7 @@ function ServicesSection() {
         <div className="innerTextBox">
           <h4>Services</h4>
           <p>
-            As a Freelance Developer, my clients are the boss, but I get to
-            decide how I do what I do. My library of experience offers the
-            opportunity to bring my knowledge from multiple disciplines into my
-            work. Therefore, as your Developer, I can see your problem from a
-            diverse perspective enabling me to offer a new approach to your
-            problems and your business.
+          Looking for someone to build your idea but don't know where to start? Don't worry you're in the right place. Whether you need a UX/UI Designer, Someone to migrate your data or maybe you just need someone to point you in the right direction. Whatever it is, I am here to help. Together with my professional skills, my library of life experience influences how I work and allows me to look at your challenges from a new perspective. 
           </p>
         </div>
       </div>

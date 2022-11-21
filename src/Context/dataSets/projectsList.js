@@ -3,6 +3,7 @@ import ZoeAppPic from "../../images/ZoeApp2021.JPG";
 import xoomPic from "../../images/preview-xoom-videochat-app.JPG";
 import drumkitPic from "../../images/Screenshot-drumkit-2022-10-28 144448.png";
 import feel_your_flow from "../../images/feel_your_flow.png";
+import portfolioPic from "../../images/portfolioPic.png"
 import {codingLanguages} from "./codeStackDataset"
 
 const stackUsedInProject=(item)=>{
@@ -50,15 +51,17 @@ export const projectsList = [
     img: drumkitPic,
     callToAction: "View Code",
   },
-  // {
-  //   key: "3",
-  //   name: "test3",
-  //   link: "http/",
-  //   icon: "",
-  //   description: " this is a text project description ",
-  //   img: "https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png",
-  //   callToAction: "View Code",
-  // },
+  {
+    key: "3",
+    name: "My Porfolio",
+    link: "https://github.com/Jeremiah1582/frontend-myportfolio-jeremiahbrown-2.1",
+    link2:"https://github.com/Jeremiah1582/backend-production-myportfolio-jeremiahbrown-2.1" , 
+    icon: "",
+    description: " This personal Full stack project was optimized to run on mobile and desktop web browsers",
+    img: portfolioPic,
+    callToAction: "View front end Code",
+    callToAction2: "View back end Code",
+  },
   {
     key: "4",
     name: "Xoom-VideoChat-app",

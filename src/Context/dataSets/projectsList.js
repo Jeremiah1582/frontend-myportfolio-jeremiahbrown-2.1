@@ -57,6 +57,7 @@ export const projectsList = [
     link: "https://github.com/Jeremiah1582/frontend-myportfolio-jeremiahbrown-2.1",
     liveLink:"https://github.com/Jeremiah1582/backend-production-myportfolio-jeremiahbrown-2.1" , 
     icon: "",
+    teachStack:["JS","SCSS", "HTML", "React", "MongoDB", "Node.js", "ExpressJS", "Mongoose", "GridFs", "Vercel"],
     description: " This personal Full stack project was optimized to run on mobile and desktop web browsers",
     img: portfolioPic,
     callToAction: "View front end Code",

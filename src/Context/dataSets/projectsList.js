@@ -55,7 +55,7 @@ export const projectsList = [
     key: "3",
     name: "My Porfolio",
     link: "https://github.com/Jeremiah1582/frontend-myportfolio-jeremiahbrown-2.1",
-    link2:"https://github.com/Jeremiah1582/backend-production-myportfolio-jeremiahbrown-2.1" , 
+    liveLink:"https://github.com/Jeremiah1582/backend-production-myportfolio-jeremiahbrown-2.1" , 
     icon: "",
     description: " This personal Full stack project was optimized to run on mobile and desktop web browsers",
     img: portfolioPic,

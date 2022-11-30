@@ -67,7 +67,6 @@ function App() {
           <Modal.Title>{alertMsg}</Modal.Title>
         </Modal.Header>
       </Modal>
-      )
       <MsgButton handleMsgModalShow={handleMsgModalShow} />
     </div>
   );

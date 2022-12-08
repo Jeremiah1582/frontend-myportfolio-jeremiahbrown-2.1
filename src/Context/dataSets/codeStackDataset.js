@@ -7,6 +7,21 @@ export const codingLanguages = [
     documentation: "https://reactjs.org/tutorial/tutorial.html#what-is-react",
   },
   {
+    name: "HTML",
+    icon: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png",
+    type: "Markup language",
+    info: "",
+    documentation:
+      "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
+  },
+  {
+    name: "CSS",
+    icon: "https://cdn0.iconfinder.com/data/icons/document-file-types/512/css-512.png",
+    type: "Style sheet language ",
+    info: "",
+    documentation: "https://www.w3schools.com/css/css_intro.asp",
+  },
+  {
     name: "JS",
     icon: "https://cdn-icons-png.flaticon.com/512/919/919828.png",
     type: "Multi-paradigm programming language",
@@ -41,21 +56,6 @@ export const codingLanguages = [
     info: "A back end web application framework for Node.js, designed for building web applications and APIs.",
     documentation:
       "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
-  },
-  {
-    name: "HTML",
-    icon: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png",
-    type: "Markup language",
-    info: "",
-    documentation:
-      "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics",
-  },
-  {
-    name: "CSS",
-    icon: "https://cdn0.iconfinder.com/data/icons/document-file-types/512/css-512.png",
-    type: "Style sheet language ",
-    info: "",
-    documentation: "https://www.w3schools.com/css/css_intro.asp",
   },
   {
     name: "AWS",

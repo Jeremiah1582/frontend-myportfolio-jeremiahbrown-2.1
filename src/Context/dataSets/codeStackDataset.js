@@ -62,8 +62,15 @@ export const codingLanguages = [
     icon: "https://th.bing.com/th/id/R.a6c1d39637949a370f8e93aab60a741f?rik=ABtTtCBpS8oVOw&riu=http%3a%2f%2fgisuser.com%2fwp-content%2fuploads%2f2018%2f08%2f2000px-Amazon_Web_Services_Logo.svg_.png&ehk=hQq0rohWcsyiJCNiAOwDAXgnti8Yjm0TPZJLBnIXSHM%3d&risl=&pid=ImgRaw&r=0",
     type: "cloud computing platform",
     paradigm: " functional, generic, imperative, object-oriented",
-    info: "currently enrolled in an AWS course",
+    info: "Excited to currently be learning AWS",
     documentation: "https://docs.aws.amazon.com/index.html",
+  },
+  {
+    name: "Bash Linux",
+    icon: "https://www.linuxjournal.com/sites/default/files/styles/360_250/public/nodeimage/story/bash-icon_0.png?itok=JZG6p4sq",
+    type: "CLI",
+    info: "Bash is a Unix shell and command language",
+    documentation: "https://devdocs.io/bash/",
   },
   {
     name: "Python",
@@ -71,7 +78,7 @@ export const codingLanguages = [
     type: "programming language",
     paradigm:
       " Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",
-    info: "Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. ",
+    info: "Excited to currently be learning Python",
     documentation: "https://www.python.org/doc/essays/blurb/",
   },
  

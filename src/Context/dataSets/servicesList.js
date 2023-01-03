@@ -3,6 +3,7 @@ import saleCycle from "../../images/7-stufen-sales-cycle.png";
 import mernStack from "../../images/mern-stack-banner-image.png";
 import frontEndExample from "../../images/FrontendWedDevImgExampleTravelHouse.png";
 import backEndExample from "../../images/backend-illustrationPNG.gif";
+import CloudComputing from "../../images/CloudComputinggif.gif";
 export const servicesList = [
   {
     name: "Full-Stack Web-Development",
@@ -31,6 +32,15 @@ export const servicesList = [
     experience: "2 years",
     description: "Perhaps you would like to connect your user interface with your database, or call information from a server or API. The backend can help you achieve all of this, ",
     img: backEndExample,
+    callToAction: "Learn More",
+  },
+  {
+    name: "Cloud Computing",
+    link: "https://aws.amazon.com/what-is-cloud-computing/",
+    icon: "",
+    experience: "2 years",
+    description: "Need to migrate your services or large sums or data? Maybe you're looking for a more flexible solution to your enterprises digital infrastructure? Either way, Reach out and see what solutions are available to you",
+    img: CloudComputing,
     callToAction: "Learn More",
   },
   {

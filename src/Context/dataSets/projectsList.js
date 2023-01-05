@@ -30,7 +30,7 @@ export const projectsList = [
     key: "1",
     name: "API for live job listings",
     link: "https://github.com/Jeremiah1582/API-Job_Listing_ENG-DEU-Live",
-    liveLink: "https://api-job-listing-eng-deu-live.vercel.app/listings",
+    liveLink: "https://api-job-listing-eng-deu-live.vercel.app/listings/",
     icon: "",
     teachStack:["JS", "Node.js", "ExpressJS", "Heroku" ],
     description:

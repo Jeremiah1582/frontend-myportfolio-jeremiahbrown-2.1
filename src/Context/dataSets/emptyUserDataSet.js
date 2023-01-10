@@ -19,11 +19,11 @@ export const defaultUserState = {
       img: "https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-256.png",
       link: "https://www.facebook.com/jeremiahglobetrotterbrown.1582",
     },
-    {
-      name: "instagram",
-      img: "https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png",
-      link: "https://www.instagram.com/itispronouncedjeremiah/",
-    },
+    // {
+    //   name: "instagram",
+    //   img: "https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-256.png",
+    //   link: "https://www.instagram.com/itispronouncedjeremiah/",
+    // },
     {
       name: "linkedin",
       img: "https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_linkedin-256.png",

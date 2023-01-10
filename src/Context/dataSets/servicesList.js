@@ -6,7 +6,7 @@ import backEndExample from "../../images/backend-illustrationPNG.gif";
 import CloudComputing from "../../images/CloudComputinggif.gif";
 export const servicesList = [
   {
-    name: "Full-Stack Web-Development",
+    name: "Full-Stack Development",
     link: "https://www.mongodb.com/mern-stack#:~:text=MERN%20is%20the%20stack%20of%20choice%20for%20today%E2%80%99s,JSON-heavy%2C%20cloud-native%2C%20and%20that%20have%20dynamic%20web%20interfaces.",
     icon: "",
     experience: "2 years",
@@ -16,7 +16,7 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "Front-End Web-Development ",
+    name: "Front-End UI/UX Development",
     link: "https://www.scholarhat.com/tutorial/fullstack/what-is-front-end-development-who-is-frontend-developer#:~:text=A%20front%20end%20developer%2C%20can%20also%20know%20as,can%20access%20or%20interact%20with%20the%20application%20eventually.",
     icon: "",
     experience: "2 years",
@@ -26,7 +26,7 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "Back-End Web-Development",
+    name: "Back-End Development",
     link: "https://blog.hubspot.com/website/back-end-developer",
     icon: "",
     experience: "2 years",

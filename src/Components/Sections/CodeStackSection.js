@@ -41,7 +41,7 @@ function CodeStackSection() {
       </div>
       <div className="textbox">
         <div className="innerTextBox">
-          <h4>My Code Stack</h4>
+          <h4>My Stack</h4>
           <p>
             Interested in knowing more about my code stack? hover over the shield of interest and access the documentation. 
           </p>

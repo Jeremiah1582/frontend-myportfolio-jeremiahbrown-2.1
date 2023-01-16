@@ -35,7 +35,7 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "Cloud Computing",
+    name: "AWS Cloud Solutions",
     link: "https://aws.amazon.com/what-is-cloud-computing/",
     icon: "",
     experience: "2 years",

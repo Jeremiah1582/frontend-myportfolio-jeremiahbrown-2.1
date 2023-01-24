@@ -4,7 +4,8 @@ import xoomPic from "../../images/preview-xoom-videochat-app.JPG";
 import drumkitPic from "../../images/Screenshot-drumkit-2022-10-28 144448.png";
 import feel_your_flow from "../../images/feel_your_flow.png";
 import portfolioPic from "../../images/portfolioPic.png"
-import dataClean from "../../images/data_processing_img"
+// import dataClean from "../../images/data_processing_img.png"
+// import OpenAi from "../../images/OpenAI_Logo.png"
 import {codingLanguages} from "./codeStackDataset"
 
 const stackUsedInProject=(item)=>{
@@ -84,11 +85,23 @@ export const projectsList = [
     description:
       "Used Python to Automate the process of cleaning and standardising corrupt data in .csv files .",
     teachStack:["Python"],
-    img: dataClean ,
-    callToAction2: "go to site",
+    // img: dataClean ,
+    callToAction2: "View Code",
   },
   {
     key: "6",
+    name: "Chat-GPT Mini Project",
+    link: 'https://github.com/Jeremiah1582/Chat-GPT-basic-test',
+    liveLink: "",
+    icon: "",
+    description:
+      "Using the Chat-GPT API to interact with the AI.",
+    teachStack:["Python"],
+    // img: OpenAi ,
+    callToAction2: "View Code",
+  },
+  {
+    key: "7",
     name: "feelyourflow.de",
     link:null,
     liveLink: "https://feelyourflow.de/",

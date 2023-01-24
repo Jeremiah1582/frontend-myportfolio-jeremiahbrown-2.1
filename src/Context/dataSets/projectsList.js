@@ -4,6 +4,7 @@ import xoomPic from "../../images/preview-xoom-videochat-app.JPG";
 import drumkitPic from "../../images/Screenshot-drumkit-2022-10-28 144448.png";
 import feel_your_flow from "../../images/feel_your_flow.png";
 import portfolioPic from "../../images/portfolioPic.png"
+import dataClean from "../../images/data_processing_img"
 import {codingLanguages} from "./codeStackDataset"
 
 const stackUsedInProject=(item)=>{
@@ -76,6 +77,18 @@ export const projectsList = [
   },
   {
     key: "5",
+    name: "Data Cleaning with Python",
+    link: 'https://github.com/Jeremiah1582/Cleaning_Data_Python-',
+    liveLink: "",
+    icon: "",
+    description:
+      "Used Python to Automate the process of cleaning and standardising corrupt data in .csv files .",
+    teachStack:["Python"],
+    img: dataClean ,
+    callToAction2: "go to site",
+  },
+  {
+    key: "6",
     name: "feelyourflow.de",
     link:null,
     liveLink: "https://feelyourflow.de/",

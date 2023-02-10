@@ -62,7 +62,7 @@ export default function SideNavBar({ nav, setNav }) {
                         <i className={`${navLink.icon} navIcon`} />
                       </NavIcon>
 
-                      <NavText style={{ color: "white" }}>
+                      <NavText >
                         {navLink.name}
                       </NavText>
                       {/* SUBITEM NAV LINKS */}

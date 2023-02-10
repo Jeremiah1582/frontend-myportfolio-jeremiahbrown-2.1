@@ -864,6 +864,9 @@
       top: 15%;
     }
   }
+  .sidenav---icon-bar---u1f02{
+    color: black;
+  }
 
   .uploadForm {
     width: 100%;
@@ -921,17 +924,28 @@
 
   // nav
   .nav {
-    background-color: rgba(255, 255, 255, 0.033) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
     position: fixed !important;
-    border-right: rgba(255, 255, 255, 0.196) solid thin;
+    border-right: rgba(255, 255, 255, 0) solid thin;
     border-top-right-radius: 15px;
     align-items: flex-start !important;
+   
+    
+    
     &:hover {
-      background-color: $color2 !important;
+      contain: content !important;
+      background-color: $color2 !important; 
+      height: 140px;
+
+      .navIcon{
+        display: contents;
+      }
+
     }
   }
   .navIcon {
-    //inline styling
+   display: none;
+
   }
   .navText {
     //inline styling
@@ -944,7 +958,10 @@
     a {
       text-decoration: none;
       font-size: 17px;
-      color: white;
+     &:hover{
+   
+
+      }
     }
 
     i {

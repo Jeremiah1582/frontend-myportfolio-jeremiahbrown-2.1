@@ -3,6 +3,7 @@
     font-size: small;
     display: flex;
     justify-content: center;
+    scroll-margin-right: none;
   }
 
   // Landing-Page
@@ -262,7 +263,7 @@
 
   // SECTION
   .sectionContainer {
-    width: $mobileLayoutWidth;
+    width: 82%;
     margin-bottom: 30%;
   }
   .section {

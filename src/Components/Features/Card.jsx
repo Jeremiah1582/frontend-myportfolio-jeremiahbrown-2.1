@@ -20,6 +20,7 @@ function Card({ imagen, ...props }) {
       style={props3}
       onMouseEnter={() => setShown(true)}
       onMouseLeave={() => setShown(false)}
+      
     >
       <img src={imagen} alt={props.name} />
 

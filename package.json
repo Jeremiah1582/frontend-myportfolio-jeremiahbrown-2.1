@@ -23,11 +23,11 @@
     "react-scripts": "5.0.1",
     "react-spring": "^9.5.2",
     "react-spring-3d-carousel": "^1.2.1",
+    "react-swipeable": "^7.0.0",
     "sass": "^1.54.6",
     "trendmicro-ui": "^0.5.2",
     "web-vitals": "^2.1.0"
   },
- 
   "scripts": {
     "devStart": "react-scripts start",
     "start": "vercel dev",

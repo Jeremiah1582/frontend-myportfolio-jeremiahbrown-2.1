@@ -6,6 +6,7 @@ import feel_your_flow from "../../images/feel_your_flow.png";
 import portfolioPic from "../../images/portfolioPic.png"
 import dataClean from "../../images/data_processing_img.gif"
 import OpenAi from "../../images/OpenAI_Logo.png"
+import chatbot from "../../images/robot.gif"
 import {codingLanguages} from "./codeStackDataset"
 
 const stackUsedInProject=(item)=>{
@@ -18,7 +19,7 @@ export const projectsList = [
   //exported to NavArray
   
   {
-    key: "0",
+  
     name: "Zoe Booking Medical Platform",
     link: "https://github.com/Jeremiah1582/zoiapp2021",
     icon: "",
@@ -29,7 +30,7 @@ export const projectsList = [
     callToAction: "View Code",
   },
   {
-    key: "1",
+    
     name: "API for live job listings",
     link: "https://github.com/Jeremiah1582/API-Job_Listing_ENG-DEU-Live",
     liveLink: "https://api-job-listing-eng-deu-live.vercel.app/listings/",
@@ -43,7 +44,7 @@ export const projectsList = [
     callToAction2: "View API",
   },
   {
-    key: "2",
+   
     name: "DrumKit-Toy-Project",
     link: "https://github.com/Jeremiah1582/DRum-Kit-Toy-Project",
     icon: "",
@@ -54,7 +55,7 @@ export const projectsList = [
     callToAction: "View Code",
   },
   {
-    key: "3",
+ 
     name: "My Porfolio",
     link: "https://github.com/Jeremiah1582/frontend-myportfolio-jeremiahbrown-2.1",
     liveLink:"https://github.com/Jeremiah1582/backend-production-myportfolio-jeremiahbrown-2.1" , 
@@ -66,7 +67,6 @@ export const projectsList = [
     callToAction2: "View back end Code",
   },
   {
-    key: "4",
     name: "Xoom-VideoChat-app",
     link: "https://github.com/Jeremiah1582/xoom-videochat-app-sep2021",
     icon: "",
@@ -77,7 +77,7 @@ export const projectsList = [
     callToAction: "View Code",
   },
   {
-    key: "5",
+
     name: "Data Cleaning with Python",
     link: 'https://github.com/Jeremiah1582/Cleaning_Data_Python-',
     liveLink: "",
@@ -89,7 +89,7 @@ export const projectsList = [
     callToAction: "View Code",
   },
   {
-    key: "6",
+    
     name: "Chat-GPT Mini Project",
     link: 'https://github.com/Jeremiah1582/Chat-GPT-basic-test',
     liveLink: "",
@@ -101,7 +101,7 @@ export const projectsList = [
     callToAction: "View Code",
   },
   {
-    key: "7",
+   
     name: "feelyourflow.de",
     link:null,
     liveLink: "https://feelyourflow.de/",
@@ -112,10 +112,21 @@ export const projectsList = [
     img: feel_your_flow,
     callToAction2: "go to site",
   },
+  {
+    name: "AI Chatbot",
+    link:"https://github.com/Jeremiah1582/ChatBot-GPT3",
+    icon: "",
+    description:
+      "This Project uses OpenAI's ChatGPT model as an AI Chatbot. Ask the chatbot anything and be amazed by the response",
+    teachStack:["OpenAI","Python", "flask", "CSS", "React.js"],
+    img: chatbot,
+    callToAction: "View Code ",
+  },
 ];
 
 export const projectListCards = projectsList.map((project, idx) => {
   return {
+
     content: (
       <Card
         imagen={project.img}

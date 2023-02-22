@@ -6,7 +6,7 @@ import feel_your_flow from "../../images/feel_your_flow.png";
 import portfolioPic from "../../images/portfolioPic.png"
 import dataClean from "../../images/data_processing_img.gif"
 import OpenAi from "../../images/OpenAI_Logo.png"
-import chatbot from "../../images/robot.gif"
+import chatbot from "../../images/ChatbotImage.gif"
 import {codingLanguages} from "./codeStackDataset"
 
 const stackUsedInProject=(item)=>{

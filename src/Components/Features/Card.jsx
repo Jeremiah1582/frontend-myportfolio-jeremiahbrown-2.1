@@ -1,4 +1,3 @@
-import Styles from "../../styling/App.scss";
 import React, { useContext, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { Button } from "react-bootstrap";

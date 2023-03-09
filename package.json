@@ -21,6 +21,7 @@
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "react-spring": "^9.5.2",
     "react-spring-3d-carousel": "^1.2.1",
     "react-swipeable": "^7.0.0",

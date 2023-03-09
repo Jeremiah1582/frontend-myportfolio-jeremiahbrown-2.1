@@ -9,6 +9,7 @@ import { MyContext } from "../../Context/ContextApi.js";
 import WorkExpPage from "../Pages/workExpPage";
 import { defaultUserState } from "../../Context/dataSets/emptyUserDataSet";
 import { Alert } from "react-bootstrap";
+import CertificatesSection from "../Sections/CertificatesSection.js";
 
 function LandingPage() {
   const { user, getUser, msg } = useContext(MyContext);
@@ -28,8 +29,12 @@ function LandingPage() {
         <ProjectSection />
         {/* CODESTACK SEC */}
         <CodeStackSection />
-        {/* CV Section SEC */}
+ {/* CV Section SEC */}
         <CVSection />
+        <CertificatesSection></CertificatesSection>
+       
+        
+       
       </div>
 
       {/* Footer */}
@@ -57,6 +62,8 @@ function LandingPage() {
               </div>
             </div>
           </div>
+          
+        
           <div className="footerCol copyRight">© Copyright Jeremiah Brown</div>
         </footer>
       </div>

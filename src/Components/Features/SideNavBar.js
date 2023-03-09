@@ -15,6 +15,7 @@ import { projectsList } from "../../Context/dataSets/projectsList";
 import "@trendmicro/react-sidenav/dist/react-sidenav.css";
 import { OffCanvasRight } from "../Features/LoginOffCanvasRight";
 import { MyContext } from "../../Context/ContextApi";
+import logo from '../../images/logo-lite192.png'
 
 export default function SideNavBar({ nav, setNav }) {
   const [loginClicked, setLoginClicked] = useState(false);
@@ -26,6 +27,7 @@ export default function SideNavBar({ nav, setNav }) {
 
   return (
     <div>
+        
       <SideNav
         className="nav"
         onSelect={(selected) => {
@@ -36,6 +38,7 @@ export default function SideNavBar({ nav, setNav }) {
           }
         }}
       >
+      
         <Toggle expanded={true} />
         {loginClicked ? (
           <OffCanvasRight
@@ -47,6 +50,7 @@ export default function SideNavBar({ nav, setNav }) {
         ) : null}
 
         <SideNav.Nav defaultSelected="/">
+          
           {navArray.map((navLink, indx) => {
             // if (navLink.adminOnly && )
             if (!isLoggedin && !navLink.adminOnly) {
@@ -96,6 +100,7 @@ export default function SideNavBar({ nav, setNav }) {
                       ) : null}
                     </NavItem>
                   </Link>
+                  
                 </NavItem>
               );
             } else if (isLoggedin) {
@@ -181,9 +186,15 @@ export default function SideNavBar({ nav, setNav }) {
               }
             }
           })}
-        </SideNav.Nav>
+      
 
+        </SideNav.Nav>
+         <img className='logo' to='/' src={logo} alt=""/>
         <Outlet />
+        
+   
+       
+        
       </SideNav>
     </div>
   );

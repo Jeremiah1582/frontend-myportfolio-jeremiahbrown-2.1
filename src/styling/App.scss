@@ -253,7 +253,7 @@ $mobileLayoutWidth: 400px;
 }
 // SECTION
 .certImg{
-  width: 150px;
+  width: 14em;
   position: relative;
   // top: -40px;
   transition: 0.5s;
@@ -290,8 +290,11 @@ $mobileLayoutWidth: 400px;
   // background-color: #d8d6d6;
 }
 .certificateSection{
+  margin-top: 150px;
+  margin-bottom: 100px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   

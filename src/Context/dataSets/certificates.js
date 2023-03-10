@@ -6,7 +6,7 @@ export const certificates=[
     {
         name: 'CCP',
         institution:'Digital Career Institute (DCI)',
-        certifyingBody:'Amazon Web Services (AWS)',
+        issuedBy:'Amazon Web Services Training and Certification',
         startDate:new Date('28.10.2022'),
         endDate:new Date('06.03.2023'),
         issueDate: new Date('07.03.2023'), 
@@ -17,8 +17,8 @@ export const certificates=[
     },  
     {
         name: 'AWS re/Start Graduate',
-        institution:'Amazon Web Services (AWS)',
-        certifyingBody:'Amazon Web Services (AWS)',
+        institution:'Amazon Web Services Training and Certification',
+        issuedBy:'Amazon Web Services (AWS)',
         startDate:new Date('28.10.2022'),
         endDate:new Date('06.03.2023'),
         issueDate: new Date('10.03.2023'), 
@@ -31,7 +31,7 @@ export const certificates=[
     {
         name: 'Weiterbildung zum/zur Web- und Softwareentwickler/in',
         institution:'DCI (Digital Career Institute)',
-        certifyingBody:'DCI (Digital Career Institute)',
+        issuedBy:'DCI (Digital Career Institute)',
         startDate:new Date('03.08.2020'),
         endDate:new Date('03.09.2021'),
         issueDate: new Date('27.09.2021'), 

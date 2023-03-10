@@ -11,11 +11,7 @@ function ProjectsSection() {
           <h4>Projects</h4>
 
           <p>
-            These are some of the projects i have worked on over time Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            voluptas, atque minima perspiciatis magni quibusdam! Recusandae ex,
-            a, officiis ullam ipsam possimus modi delectus non ipsa error, cum
-            perferendis in?
+            These are some of the projects i have worked on over time
           </p>
         </div>
       </div>

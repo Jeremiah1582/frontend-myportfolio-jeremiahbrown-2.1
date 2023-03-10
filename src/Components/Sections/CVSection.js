@@ -15,10 +15,10 @@ function CVSection() {
   const [CVInfo, setCVInfo] = useState([
     {
       img: CVImagen,
-      name: "Download CV",
-      description: "my cv is here. feel free to download or just view it",
+      name: "Download Jeremiah's CV",
+      description: "",
       link: `${backendHostLink}api/getCV/${fileIdInBucket}`,
-      callToAction: "Download",
+      callToAction: "View CV",
     },
     {},
   ]);
@@ -41,7 +41,7 @@ function CVSection() {
     <div id="CVSection" className="CVSection contentSection">
       <div className="textbox ">
         <div className="innerTextBox disappearingInnerTextBox">
-          <h4>Web-Developemnt CV</h4>
+          <h4>Web-Developer CV</h4>
           <p>This is my web Dev CV and Credentials</p>
         </div>
       </div>

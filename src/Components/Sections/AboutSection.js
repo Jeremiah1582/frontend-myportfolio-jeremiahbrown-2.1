@@ -8,7 +8,7 @@ function AboutSection({ children }) {
 
         <p>
           {" "}
-          Hi! I'm Jeremiah (he/him), a Full Stack MERN Developer working
+          Hi! I'm Jeremiah (he/him), a Full Stack Developer and Cloud Practitioner working
           remotely here in Berlin. Some say I'm a charismatic guy, I like to
           think I just have a few screws loose. Anyway, take a look around, and
           if you require my services, you can reach out via the

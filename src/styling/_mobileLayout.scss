@@ -182,9 +182,31 @@
       }
     }
   }
+  .certImg{
+    width: 14em;
+    // position: relative;
+    // top: -40px;
+    transition: 0.5s;
+    margin:25px ;
+  }
+  .certImg:hover{
+    scale: 1;
+    margin-right: 0;
+   
+  }
   .contentSection {
     width: 90%;
   }
+  .certificateSection{
+    width: 100%;
+  }
+  .certificate{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
 
   .contentSection:nth-of-type(1) {
     margin-top: 0%;

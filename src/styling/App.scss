@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:wght@100;400&display=swap");
 $color0: rgba(249, 244, 244, 0.757);
 $color1: #96a0a03c;
-$color2: #243a4ee8;
+$color2: #16293af2;
 $color3: #e6ebe7;
 $color4: #96a0a0;
 $color5: #241b14;
@@ -100,7 +100,7 @@ $mobileLayoutWidth: 400px;
       position: absolute;
       width: 100%;
       text-align: center;
-      top: 40.5%;
+      top: 30.5%;
       color: white;
       animation: drop_down 3.5s;
       height: 350px;
@@ -110,7 +110,7 @@ $mobileLayoutWidth: 400px;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      left: 200px;
+      left: 270px;
 
       .topText {
         position: relative;
@@ -122,7 +122,7 @@ $mobileLayoutWidth: 400px;
           top: -10%;
         }
         to {
-          top: 50.5%;
+          top: 30.5%;
         }
       }
     }
@@ -156,7 +156,9 @@ $mobileLayoutWidth: 400px;
     }
 
     .headerImgContainer {
-      background-image: url("../images/the-matterhorn-as-seen-from-the-lauterbrunnen-valley-digitally-stitched-by-dominic-kamp.jpg");
+      background-image:  url("../images/1020920.jpg");
+      background-color: #243a4e65;
+      background-blend-mode: multiply;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: bottom;

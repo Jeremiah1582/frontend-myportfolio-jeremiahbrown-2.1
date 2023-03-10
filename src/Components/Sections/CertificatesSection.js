@@ -11,7 +11,7 @@ function CertificatesSection() {
     <div className='certificateSection  '>   
       {certificates.map(cert=>{
         return (
-        <Figure >
+        <Figure className='certificate'>
          
           <Figure.Image
             className='certImg'

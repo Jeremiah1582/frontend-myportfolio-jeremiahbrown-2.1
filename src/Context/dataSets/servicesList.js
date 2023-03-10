@@ -35,10 +35,10 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "AWS Cloud Solutions",
+    name: "AWS Cloud Consultant",
     link: "https://aws.amazon.com/what-is-cloud-computing/",
     icon: "",
-    experience: "2 years",
+    experience: "",
     description: "Need to migrate your services or large sums or data? Maybe you're looking for a more flexible solution to your enterprises digital infrastructure? Either way, Reach out and see what solutions are available to you",
     img: CloudComputing,
     callToAction: "Learn More",

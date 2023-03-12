@@ -9,9 +9,9 @@ function CertificatesSection() {
   }
   return (
     <div className='certificateSection  '>   
-      {certificates.map(cert=>{
+      {certificates.map((cert, indx)=>{
         return (
-        <Figure className='certificate'>
+        <Figure key={indx} className='certificate'>
          
           <Figure.Image
             className='certImg'

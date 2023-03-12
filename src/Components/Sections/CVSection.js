@@ -16,7 +16,7 @@ function CVSection() {
     {
       img: CVImagen,
       name: "Download Jeremiah's CV",
-      description: "",
+      description: "Learn more about me through my CV",
       link: `${backendHostLink}api/getCV/${fileIdInBucket}`,
       callToAction: "View CV",
     },
@@ -42,7 +42,7 @@ function CVSection() {
       <div className="textbox ">
         <div className="innerTextBox disappearingInnerTextBox">
           <h4>Web-Developer CV</h4>
-          <p>This is my web Dev CV and Credentials</p>
+          {/* <p>This is my web Dev CV and Credentials</p> */}
         </div>
       </div>
       <div className="carouselSec">

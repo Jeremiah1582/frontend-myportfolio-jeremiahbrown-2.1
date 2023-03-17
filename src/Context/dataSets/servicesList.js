@@ -35,7 +35,7 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "AWS Cloud Consultant",
+    name: "AWS Cloud Consultation",
     link: "https://aws.amazon.com/what-is-cloud-computing/",
     icon: "",
     experience: "",
@@ -44,7 +44,7 @@ export const servicesList = [
     callToAction: "Learn More",
   },
   {
-    name: "Sales & Marketing Consultant",
+    name: "Sales & Marketing Consultation",
     link: "https://www.linkedin.com/in/jeremiah-brown-35232190/details/experience/",
     icon: "",
     experience: "over 7 years",

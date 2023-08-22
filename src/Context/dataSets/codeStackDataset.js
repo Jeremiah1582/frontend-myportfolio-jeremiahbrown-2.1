@@ -192,7 +192,7 @@ export const codingLanguages = [
   },
   {
     name: "Heroku",
-    icon: "https://cdn.dicastech.net/wp-content/uploads/2020/03/11093420/heroku-logo-2.png",
+    icon: "https://gluonhq.com/wp-content/uploads/2018/05/heroku-logotype-vertical-purple.png",
     type: "app hosting service",    
     info: "Heroku makes it easy to deploy and scale Node.js applications.  ",
     documentation: "https://devcenter.heroku.com/categories/reference",

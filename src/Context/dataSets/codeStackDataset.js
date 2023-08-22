@@ -1,10 +1,53 @@
 export const codingLanguages = [
   {
+    name: "JS",
+    icon: "https://cdn-icons-png.flaticon.com/512/919/919828.png",
+    type: "Multi-paradigm programming language",
+    paradigm:
+      "event-driven, functional, imperative, procedural, object-oriented programming",
+    info: "",
+    documentation: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "Python",
+    icon: "https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png",
+    type: "programming language",
+    paradigm:
+      " Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",
+    info: "Excited to currently be learning Python",
+    documentation: "https://www.python.org/doc/essays/blurb/",
+  },
+  {
     name: "React",
     icon: "https://cdn.buttercms.com/cQfNWfcMSHmAZfvtloVz",
     type: "framework, JavaScript library ",
     info: "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
     documentation: "https://reactjs.org/tutorial/tutorial.html#what-is-react",
+  },
+  {
+    name: "Next.js 13",
+    icon: "https://tkssharma.com/static/02dfdac16100b40337b156a95ab4b1fe/56e34/nextjs.png",
+    type: "framework",
+    info: "Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.",
+    documentation: "https://nextjs.org/docs/getting-started",
+  },
+
+  {
+    name: 'Django',
+    icon: 'https://static.djangoproject.com/img/logos/django-logo-negative.png',
+    type: 'framework',
+    for: 'Python',
+    writtenIn: 'Python',
+    info: 'Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.',
+    documentation: 'https://docs.djangoproject.com/en/3.2/',
+  },
+  {
+    name: "AWS",
+    icon: "https://th.bing.com/th/id/R.a6c1d39637949a370f8e93aab60a741f?rik=ABtTtCBpS8oVOw&riu=http%3a%2f%2fgisuser.com%2fwp-content%2fuploads%2f2018%2f08%2f2000px-Amazon_Web_Services_Logo.svg_.png&ehk=hQq0rohWcsyiJCNiAOwDAXgnti8Yjm0TPZJLBnIXSHM%3d&risl=&pid=ImgRaw&r=0",
+    type: "cloud computing platform",
+    paradigm: " ",
+    info: "Amazon Web Services offers a wide range of solutions that utilize the benefits of the cloud, providing secure, easily accessible, flexible and affordable solutions.",
+    documentation: "https://docs.aws.amazon.com/index.html",
   },
   {
     name: "HTML",
@@ -21,25 +64,7 @@ export const codingLanguages = [
     info: "",
     documentation: "https://www.w3schools.com/css/css_intro.asp",
   },
-  {
-    name: "JS",
-    icon: "https://cdn-icons-png.flaticon.com/512/919/919828.png",
-    type: "Multi-paradigm programming language",
-    paradigm:
-      "event-driven, functional, imperative, procedural, object-oriented programming",
-    info: "",
-    documentation: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  {
-    name: "MongoDB",
-    icon: "https://www.svgviewer.dev/static-svgs/34566/mongodb.svg",
-    type: "database, NoSQL database program",
-    WrittenIn: "C++, JavaScript, Python",
-    info: "MongoDB Atlas is a fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS , Azure, and GCP). ",
-    documentation:
-      "https://mongodb.github.io/node-mongodb-native/3.1/tutorials/main/",
-    documentation2: "https://www.mongodb.com/docs/manual/core/gridfs/",
-  },
+
   {
     name: "Node.js",
     icon: "https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png",
@@ -64,15 +89,7 @@ export const codingLanguages = [
     info: "Bash is a Unix shell and command language",
     documentation: "https://devdocs.io/bash/",
   },
-  {
-    name: "Python",
-    icon: "https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png",
-    type: "programming language",
-    paradigm:
-      " Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective",
-    info: "Excited to currently be learning Python",
-    documentation: "https://www.python.org/doc/essays/blurb/",
-  },
+ 
  
   // {
   //   name: "TS",
@@ -190,12 +207,14 @@ export const codingLanguages = [
   //   documentation: "https://reactnative.dev/docs/getting-started",
   // },
   {
-    name: "AWS",
-    icon: "https://th.bing.com/th/id/R.a6c1d39637949a370f8e93aab60a741f?rik=ABtTtCBpS8oVOw&riu=http%3a%2f%2fgisuser.com%2fwp-content%2fuploads%2f2018%2f08%2f2000px-Amazon_Web_Services_Logo.svg_.png&ehk=hQq0rohWcsyiJCNiAOwDAXgnti8Yjm0TPZJLBnIXSHM%3d&risl=&pid=ImgRaw&r=0",
-    type: "cloud computing platform",
-    paradigm: " ",
-    info: "Amazon Web Services offers a wide range of solutions that utilize the benefits of the cloud, providing secure, easily accessible, flexible and affordable solutions.",
-    documentation: "https://docs.aws.amazon.com/index.html",
+    name: "MongoDB",
+    icon: "https://www.svgviewer.dev/static-svgs/34566/mongodb.svg",
+    type: "database, NoSQL database program",
+    WrittenIn: "C++, JavaScript, Python",
+    info: "MongoDB Atlas is a fully-managed cloud database that handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS , Azure, and GCP). ",
+    documentation:
+      "https://mongodb.github.io/node-mongodb-native/3.1/tutorials/main/",
+    documentation2: "https://www.mongodb.com/docs/manual/core/gridfs/",
   },
   {
     name: "VPC",

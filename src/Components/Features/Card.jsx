@@ -9,13 +9,13 @@ import CodeStackCard from '../Features/CodeStackCard'
 import Modal from "react-bootstrap/Modal";
 
 function MyVerticallyCenteredModal(props) {
-console.log(props);
+
 
 let relevantStack;
 
 if (props.data.techStack){
   relevantStack =  codingLanguages.filter((item)=> props.data.techStack.some(tech=>item.name.toLowerCase()=== tech.toLowerCase()))
-  console.log(relevantStack.name);
+
 } 
  
 
@@ -52,7 +52,7 @@ if (props.data.techStack){
         <span className='modalCodeStackCard'>
         {/* map the techStack Items that match the match the codeStackSection and display them in the modal */}
         {relevantStack.map((item, indx)=>{return (
-          <CodeStackCard item={item} indx={indx}/>
+          <CodeStackCard key={indx} item={item} indx={indx}/>
         )})
 
         }

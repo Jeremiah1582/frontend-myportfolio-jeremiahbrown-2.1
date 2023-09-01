@@ -46,7 +46,8 @@ if (props.data.techStack){
       </Modal.Header>
       <Modal.Body  style={{textAlign: 'center',}}>
         <h4> {props.data.name}</h4>
-        <p>Project built using...</p>
+        {relevantStack && ( <p>Project built using...</p> )}
+       
         {relevantStack?(
         <span className='modalCodeStackCard'>
         {/* map the techStack Items that match the match the codeStackSection and display them in the modal */}

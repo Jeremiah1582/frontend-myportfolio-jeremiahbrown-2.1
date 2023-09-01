@@ -21,7 +21,7 @@ export const servicesList = [
     icon: "",
     experience: "since 2020",
     description:
-      "sometime your product works perfectly just the way it is and all it needs is a little,or a lot, of polish to make the UX seamless. ",
+      "Sometimes your product works perfectly just the way it is and all it needs is a little,or a lot, of polish to make the UX seamless. ",
     img: frontEndExample,
     callToAction: "Learn More",
   },
@@ -62,8 +62,9 @@ export const servicesListCards = servicesList.map((service, idx) => {
     link: service.link,
     icon: service.icon,
     description: service.description,
+    
     content: (
-      <Card
+      <Card 
         imagen={service.img}
         name={service.name}
         key={idx}

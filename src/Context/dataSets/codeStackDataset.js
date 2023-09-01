@@ -64,6 +64,13 @@ export const codingLanguages = [
     info: "",
     documentation: "https://www.w3schools.com/css/css_intro.asp",
   },
+  {
+    name: "TailWind",
+    icon: "https://creazilla-store.fra1.digitaloceanspaces.com/icons/3257079/file-type-tailwind-icon-md.png",
+    type: "Style Language with HTML",
+    info: "",
+    documentation: "https://tailwindcss.com/docs/installation",
+  },
 
   {
     name: "Node.js",
@@ -120,6 +127,14 @@ export const codingLanguages = [
     type: "dependency",
     info: "Socket.IO is an event-driven library for real-time web applications. It enables real-time, bi-directional communication between web clients and servers. ",
     documentation: "https://socket.io/docs/v4/",
+    
+  },
+  {
+    name: "WebRtc",
+    icon: "https://th.bing.com/th/id/R.681a207f9d0119a01cb817c17a90caa9?rik=Tmv1dh9PjScvlg&riu=http%3a%2f%2fwww.9and9.com%2fimage%2fwebrtc.png&ehk=wv0%2bQ26hTe0lhXIz1VgWGIK4SHkGq2UXl1uGtzE0QCg%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+    type: "dependency",
+    info: "WebRTC is a free and open-source project providing web browsers and mobile applications with real-time communication (RTC) via application programming interfaces.",
+    documentation: "https://webrtc.org/",
     
   },
   {

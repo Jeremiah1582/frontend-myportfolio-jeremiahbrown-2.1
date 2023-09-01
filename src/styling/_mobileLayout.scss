@@ -1007,6 +1007,7 @@
   }
 
   .carouselCard {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1023,14 +1024,17 @@
   .carouselCard img {
     width: 100%;
     border-radius: 8px 35px 35px 35px;
+    
   }
 
   .carouselCard h4 {
     margin: 0;
     margin-top: 1rem;
+    
   }
 
   .carouselCard p {
+    cursor: pointer;
     margin: 0;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;

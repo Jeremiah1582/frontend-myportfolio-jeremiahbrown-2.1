@@ -1,5 +1,6 @@
-import React, { useContext, useState, useEffect } from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import React from "react";
+import CodeStackCard from "../Features/CodeStackCard";
+
 import { codingLanguages } from "../../Context/dataSets/codeStackDataset";
 
 function CodeStackSection() {
@@ -8,36 +9,10 @@ function CodeStackSection() {
       <div className="codeStackBox">
         {codingLanguages.map((item, indx) => {
           return (
-            <div className="myCard" key={item + indx}>
-              <Card.Img
-                className="icon"
-                variant="top"
-                src={item.icon}
-              ></Card.Img>
-              {/* slide effect */}
-              <Card.Body className="slide slide2">
-                <div className="content">
-                  <Card.Title>{item.name}</Card.Title>
-                  <Card.Text>{item.info.slice(0, 40).concat("...")}</Card.Text>
-                  {/* <ListGroup className="list-group-flush">
-                  <ListGroupItem>{item.type}</ListGroupItem>
-
-                  {item.paradigm ? (
-                    <ListGroupItem>Paradigms: {item.paradigm}</ListGroupItem>
-                  ) : null}
-                  {item.writtenIn ? (
-                    <ListGroupItem>WrittenIn: {item.writtenIn}</ListGroupItem>
-                  ) : null}
-                </ListGroup> */}
-
-                  <Card.Link href={item.documentation}>Documentation</Card.Link>
-                  <br />
-                  <i className="fa fa-user-circle" aria-hidden="true"></i>
-                </div>
-              </Card.Body>
-            </div>
+           <CodeStackCard key={indx} item={item} indx={indx}/>
           );
         })}
+
       </div>
       <div className="textbox">
         <div className="innerTextBox">

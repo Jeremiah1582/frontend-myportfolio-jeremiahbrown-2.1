@@ -2,11 +2,12 @@ import React from "react";
 import { servicesListCards } from "../../Context/dataSets/servicesList";
 import Carousel from "../Features/3Dcarousel";
 
-function ServicesSection() {
+function ServicesSection(props) {
   return (
     <div id="servicesSection" className="contentSection ">
       <div className="carouselSec">
         <Carousel
+          {...props}
           cards={servicesListCards}
           height="100%"
           width="40rem"

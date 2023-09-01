@@ -3,6 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import { config } from "react-spring";
 
 export default function ThreeDCarousel(props) {
+
+
   const table = props.cards.map((element, index) => {
     return { ...element, onClick: () => setGoToSlide(index) };
   });

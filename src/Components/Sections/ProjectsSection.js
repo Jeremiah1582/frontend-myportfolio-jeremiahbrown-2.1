@@ -2,7 +2,7 @@ import React from "react";
 import { projectListCards } from "../../Context/dataSets/projectsList";
 import Carousel from "../Features/3Dcarousel";
 
-function ProjectsSection() {
+function ProjectsSection(props) {
 
   return (
     <div id="projectsSection" className="contentSection ">
@@ -11,12 +11,13 @@ function ProjectsSection() {
           <h4>Projects</h4>
 
           <p>
-            These are some of the projects i have worked on over time
+            Take a look at some of the projects i enjoyed working on, and if you see anything that inspires you, reach out and let me know.
           </p>
         </div>
       </div>
       <div className="carouselSec">
         <Carousel
+          {...props}
           cards={projectListCards}
           height="100%"
           width="47rem"

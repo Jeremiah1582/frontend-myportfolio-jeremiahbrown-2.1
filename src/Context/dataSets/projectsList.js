@@ -68,7 +68,7 @@ export const projectsList = [
     icon: "",
     description:
       " This app allows 2 people to talk over video chat. inspired by the pandemic in 2021 because we all communicated via Zoom",
-      techStack:["JS", "Socket.io", "CSS", "HTML", "React", "Node", "ExpressJS"],
+      techStack:["JS", "Socket.io", "WebRtc", "CSS", "HTML", "React", "Node", "ExpressJS"],
     img: xoomPic,
     callToAction: "View Code",
   },

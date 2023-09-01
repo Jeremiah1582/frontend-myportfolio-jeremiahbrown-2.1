@@ -1,18 +1,52 @@
-import React, { useContext, useState, useEffect } from "react";
+import React from "react";
 import Header from "../Features/Header.jsx";
 import AboutSection from "../Sections/AboutSection";
 import CodeStackSection from "../Sections/CodeStackSection";
 import ProjectSection from "../Sections/ProjectsSection";
 import ServicesSection from "../Sections/ServicesSection";
 import CVSection from "../Sections/CVSection";
-import { MyContext } from "../../Context/ContextApi.js";
-import WorkExpPage from "../Pages/workExpPage";
 import { defaultUserState } from "../../Context/dataSets/emptyUserDataSet";
-import { Alert } from "react-bootstrap";
 import CertificatesSection from "../Sections/CertificatesSection.js";
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+
+
+function MyVerticallyCenteredModal(props) {
+  const {header, title, text, image} = props
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          {header}
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>{title}</h4>
+        <p>
+          {text}
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 
 function LandingPage() {
-  const { user, getUser, msg } = useContext(MyContext);
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const handleModal=(card)=>{
+    console.log(card.title);
+    setModalShow(true)
+  }
+
   return (
     <div id="home" className="landingPageCon">
       {/* HEADER SEC */}
@@ -22,20 +56,27 @@ function LandingPage() {
 
       <div className="sectionContainer">
         {/* SERVICES SEC */}
-        <ServicesSection />
+        <ServicesSection handleModal={handleModal}/>
         {/* ABOUT SEC */}
-        <AboutSection></AboutSection>
+        <AboutSection ></AboutSection>
         {/* PROJECT SEC */}
-        <ProjectSection />
+        <ProjectSection handleModal={handleModal}/>
         {/* CODESTACK SEC */}
-        <CodeStackSection />
+        <CodeStackSection handleModal={handleModal} />
  {/* CV Section SEC */}
         <CVSection />
         <CertificatesSection></CertificatesSection>
-       
-        
-       
       </div>
+
+      
+    <>
+  
+
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      />
+    </>
 
       {/* Footer */}
       <div className="">
